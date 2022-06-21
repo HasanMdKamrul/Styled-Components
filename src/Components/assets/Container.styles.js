@@ -6,14 +6,14 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  background: #262626;
+  background: ${props=>props.theme.lightTheme === 'light' ? "#FAF9F6" : "#262626"};
   width: 100%;
   height: 100vh;
 `
 
 export const CardContainer = styled.div`
   position: relative;
-  background: #1e1e1e;
+  background: ${props=>props.theme.lightTheme === 'light' ? "#ffffff" : "#1e1e1e"};;
   height: 350px;
   width: 550px;
   overflow: hidden;

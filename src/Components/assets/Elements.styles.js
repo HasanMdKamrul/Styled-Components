@@ -12,7 +12,7 @@ export const Tag = styled.span`
 `
 
 export const H1 = styled.h1`
- color: #fff;
+ color: ${props=> props.theme.lightTheme === 'light' ? "#000000" :"#fff"};
 `
 
 export const P = styled.p`
